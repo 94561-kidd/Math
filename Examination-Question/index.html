@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>數學難題</title>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        displayAlign: "left"
+      });
+    </script>
+    <script
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="./index/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>高中數學難題 (108課綱)</h1>
+    </header>
+    <main>
+      <h2>直線與圓</h2>
+      <ol class="question">
+        <li id="Q1">
+          <div class="Q">
+            $P(a,b)$ 為圓 $C:(x-3)^2+(y-4)^2=3$ 上的點，則使 $a^2+b^2$
+            為整數的點共有 _____ 個。
+          </div>
+          <button class="ans_display" onclick="ans_display('Q1_Ans')">
+            答案
+          </button>
+          <div class="A" id="Q1_Ans">
+            <strong>Ans: $70$</strong>
+            <hr>
+            <ol>
+              <li>
+                $$ 設 \, M(3,4),O(0,0) \\ \Rightarrow (5-\sqrt{3})^2 <
+                \overline{PO}^2 < (5+\sqrt{3})^2 \\ \Rightarrow 28+10\sqrt{3} =
+                10.67 \cdots < a^2 + b^2 < 28+10\sqrt{3} = 45.32 \cdots $$
+              </li>
+              <li>$ a^2+b^2 \in \mathbb{Z} \, ，共 \, 2(45-10)=70 \, 個。 $</li>
+            </ol>
+          </div>
+        </li>
+        <li id="Q2">
+          <div class="Q">
+            過點 $A(1,2)$ 向圓 $C:x^2+y^2=2$ 作二切線，令切點 $P$ 、 $Q$ ，求
+            <ol>
+              <li class="big_height">$ \triangle APQ 之外接圓方程式 $</li>
+              <li class="big_height">
+                $ O \, 為圓心，求四邊形 \, APOQ \, 之面積 $
+              </li>
+              <li class="big_height">$ \overline{PQ} \, 之長為何$</li>
+              <li style="margin: 0.4em 0 0 0">
+                $ \overleftrightarrow{PQ} \, 方程式為何$
+              </li>
+            </ol>
+          </div>
+          <button class="ans_display" onclick="ans_display('Q2_Ans')">
+            答案
+          </button>
+          <div class="A" id="Q2_Ans">
+            <strong>
+              Ans:
+              <ol>
+                <li>
+                  $$(x- \frac{1}{2} )^2+(y-1)^2= \frac{5}{4} \quad 或 \quad
+                  x^2+y^2-x-2y=0$$
+                </li>
+                <li>$\sqrt{6}$</li>
+                <li>$$\frac{2 \sqrt{30}}{5}$$</li>
+                <li>$x+2y=2$</li>
+              </ol>
+            </strong>
+            <hr>
+          </div>
+        </li>
+      </ol>
+    </main>
+    <script type="text/javascript" src="./index/script_js.js"></script>
+  </body>
+</html>

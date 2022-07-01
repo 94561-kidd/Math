@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: beige;
+  font-family: Microsoft JhengHei, Apple LiGothic Medium;
+}
+
+header {
+  background-color: antiquewhite;
+  margin: 0;
+  text-align: center;
+  padding: 1em 3em;
+}
+
+main {
+  margin: 0 16%;
+  padding: 1em 1em;
+  font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  margin: 20px 0;
+}
+
+.question {
+  margin: 0;
+  padding: 0 40px 0 40px;
+}
+.Q {
+  margin: 0.5em 0 0.5em 0;
+  padding: 0;
+  line-height: 110%;
+}
+.ans_display {
+  margin: 0 0 0.5em 0;
+}
+.A {
+  margin: 0 0 0.5em 0;
+  padding: 1em 1em 1em 1em;
+  background-color: mistyrose;
+  line-height: 110%;
+  display: none;
+}
+.A strong {
+  color: red;
+}
+
+.big_height{
+  margin: 0.1em 0;
+}
